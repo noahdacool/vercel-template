@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block page_title %}Home{% endblock %}
+
+{% block content %}
+<h1 aligh="center">Notes</h1>
+<ul class="list-group list-group-flush" id="notes">
+    <!-- "sortable-list" in style.css -->
+    {% for note in notes %}
+    <li class="list-group-item" draggable="true" id={{note.id}}>
+        <i class="uil uil-draggabledots"></i>
+        <span style="white-space: pre">{{ note.data }}</span>
+        <button type="button" class="close" onclick="deleteNote({{note.id}})"> <!-- javascript function -->
+            <span aria-hidden="true">&times;</span>
+            <span class="bi-list"></span>
+        </button>
+    </li>
+    {% endfor %}
+</ul>
+<form method="POST">
+    <input name="note" id="note" class="form-control" autofocus></input>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Add Note</button>
+    </div>
+</form>
+{% endblock %}

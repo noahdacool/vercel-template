@@ -1,0 +1,11 @@
+/* Import Google font - Poppins (code from https://www.youtube.com/watch?v=9HUlUnM3UG8&t=2s) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.list-group-item.dragging {
+    opacity: 0;
+}
+.alert, .alert-placeholder {
+    height: 40;
+}

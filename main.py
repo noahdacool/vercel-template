@@ -13,7 +13,7 @@ def start():
     return('helloworld')
 
 
-if __name__ == '__main__':
+if __name__ == '____':
     # __name__ is the name of the file that is running
     # this if statement will only return true if this file is run directly
     # not when it is run by being imported by another file

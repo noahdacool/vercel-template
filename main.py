@@ -1,10 +1,17 @@
-from website import create_app
+from flask import Flask
+# from website import create_app
 # \website is a python package because it has a __init__.py file
 # when imported, the __init__.py file will run
 
 developer_mode = False
 
-app = create_app()
+# app = create_app()
+app = Flask(__name__)
+
+@app.route('/')
+def start():
+    return('helloworld')
+
 
 if __name__ == '__main__':
     # __name__ is the name of the file that is running

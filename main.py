@@ -2,7 +2,7 @@ from website import create_app
 # \website is a python package because it has a __init__.py file
 # when imported, the __init__.py file will run
 
-developer_mode = True
+developer_mode = False
 
 app = create_app()
 

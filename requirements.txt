@@ -1,4 +1,4 @@
 Flask
 Flask_sqlalchemy
 Flask_login
-Werkzeug
+Werkzeug.security

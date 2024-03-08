@@ -1,5 +1,5 @@
 Flask
-SQLAlchemy
-LoginManager
-Blueprint
-json
+Flask_sqlalchemy
+Flask_login
+Werkzeug
+Json
